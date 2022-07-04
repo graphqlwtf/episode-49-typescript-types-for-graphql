@@ -1,0 +1,23 @@
+fragment CartInfo on Cart {
+  id
+  isEmpty
+  totalItems
+  subTotal {
+    amount
+    formatted
+  }
+}
+
+fragment CartItemInfo on CartItem {
+  id
+  name
+  quantity
+  unitTotal {
+    amount
+    formatted
+  }
+  lineTotal {
+    amount
+    formatted
+  }
+}
